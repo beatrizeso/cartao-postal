@@ -10,12 +10,12 @@
     body {
       font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column; /* cartões em coluna */
+      flex-direction: column;
       justify-content: flex-start;
       align-items: center;
       gap: 20px;
       padding: 30px;
-      background: #f4f4f4;
+      background: #8f1010;
     }
 
     p.instrucao {
@@ -23,13 +23,13 @@
       text-align: center;
       font-weight: bold;
       margin-bottom: 20px;
-      color: #333;
+      color: #000000;
     }
 
     .flip-card {
       background-color: transparent;
-      width: 90%;          /* ocupa quase toda a largura no celular */
-      max-width: 400px;    /* não fica muito grande no PC */
+      width: 90%;
+      max-width: 400px;
       height: 200px;
       perspective: 1000px;
       cursor: pointer;
@@ -140,7 +140,6 @@
   </div>
 
   <script>
-    // Faz os cartões virarem ao clicar/toque
     document.querySelectorAll('.flip-card').forEach(card => {
       card.addEventListener('click', () => {
         card.classList.toggle('flipped');
